@@ -1,0 +1,40 @@
+/*
+ *   Copyright (c) 2025 David Kirkcaldy
+ *   All rights reserved.
+ */
+.task-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #ecd2d2;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.task-input:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.task-input:selection {
+    border: none;
+}
+.task-input-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  width:90%;
+  text-align: left;
+}
+.task-input-textarea {
+  width: 90%;
+  height: auto;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: #ecd2d2;
+  color: white;
+}

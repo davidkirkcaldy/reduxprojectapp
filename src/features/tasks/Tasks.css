@@ -1,0 +1,89 @@
+/*
+ *   Copyright (c) 2025 David Kirkcaldy
+ *   All rights reserved.
+ */
+ .task {
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid #bcbcbc;
+    border-radius: 10px;
+    width: auto;
+    height: 50px;
+    text-align: left;
+    text-decoration: none;
+    margin: 5px;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 90%;
+    margin: 10px auto;
+    padding: 1rem;
+    background-color: #ecd2d2;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+
+
+.center:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .task:hover {
+    background: #f4efef;
+    border: 1px solid #000000;
+    cursor: pointer;
+  }
+  .task:active {
+    background: #f4efef;
+    border: 1px solid #000000;
+    cursor: pointer;
+  }
+  .task-li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .tasks-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:start;
+    align-items: center;
+    margin: 10px 10px;
+    padding: 0;
+    width: 90%;
+  }
+
+  .task-button {
+    z-index: 1;
+    background-color: #f4efef;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 5px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    border: 1px solid #bcbcbc;
+  }
+  .task-button:hover {
+    background-color: #e0e0e0;
+  }
+  .task-button:active {
+    background-color: #d0d0d0;
+  }
+.task-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+ 
