@@ -1,0 +1,10 @@
+/*
+ *   Copyright (c) 2025 David Kirkcaldy
+ *   All rights reserved.
+ */
+.weather-header {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  color: white
+}

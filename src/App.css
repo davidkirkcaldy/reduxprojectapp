@@ -37,3 +37,83 @@
     transform: translateY(0px);
   }
 }
+
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* .container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../public/images/background1.png');
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  z-index: -1;
+} */
+
+.content {
+  position: relative;
+  z-index: 1; /* Ensure content is above the blurred background */
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+
+  @media screen and (max-width: 768px) {
+    /* Note: this does not work well for mobiles*/
+    .container::before {
+      width: 100vw;
+      height: 140vw;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-position: center;
+      filter: blur(5px); /* Blur effect */
+      z-index: -1; /* Place it behind the content */
+      background-size: cover;
+      background-repeat: no-repeat;
+      animation: container 40s infinite alternate linear;
+      }
+    @keyframes container {
+      0% { background-image: url(./images/background1-mob.png); }
+      33% { background-image: url(./images/background2-mob.png); }
+      66% { background-image: url(./images/background3-mob.png); }
+      100% { background-image: url(./images/background4-mob.png); }
+      }
+  }
+  @media screen and (min-width: 769px) {
+    .container::before {
+      width: 100vw;
+      height: 60vw;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-position: center;
+      filter: blur(6px); /* Blur effect */
+      z-index: -1; /* Place it behind the content */
+      background-size: cover;
+      background-repeat: no-repeat;
+      animation: container 40s infinite alternate linear;
+      }
+    @keyframes container {
+      0% { background-image: url(./images/background1.png); }
+      33% { background-image: url(./images/background2.png); }
+      66% { background-image: url(./images/background3.png); }
+      100% { background-image: url(./images/background4.png); }
+      }
+  }
